@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html></html>
+
+<head> </head>
+
+10 years back
+<script>
+  const movieList = [
+    {
+      movieName: " Hari Hara Veera Mallu - Part 1 Sword vs Spirit ",
+      jonor: "action/adevnture",
+    },
+    {
+      movieName: "Saiyaara",
+      jonor: "Love",
+    },
+    {
+      movieName: " The Fantastic Four: First Steps",
+      jonor: "Love",
+    },
+  ];
+
+const recomendedMovies = document.getElementById("recomendedMovies");
+const bestOfEvents = document.getElementById("bestOfEvents")
+
+
+
+  function getRMoviesFunc() {
+    debugger
+    let cardsHTML = "";
+    movieList.map((user) => {
+      cardsHTML += `
+                    <div style="border: 1px solid #ddd; padding: 10px; margin: 5px; border-radius: 5px; display: inline-block;">
+                        <strong>${user.movieName}</strong><br>
+                        Age: ${user.movieName}<br>
+                        City: ${user.jonor}
+                    </div>
+                `;
+    });
+    document.getElementById("recomendedMovies").innerHTML = cardsHTML;
+  }
+
+   function bestOfEventsFunc() {
+    let cardsHTML = "";
+    movieList.map((user) => {
+      cardsHTML += `
+                    <div style="border: 1px solid #ddd; padding: 10px; margin: 5px; border-radius: 5px; display: inline-block;">
+                        <strong>${user.movieName}</strong><br>
+                        Age: ${user.movieName}<br>
+                        City: ${user.jonor}
+                    </div>
+                `;
+    });
+    document.getElementById("bestOfEvents").innerHTML = cardsHTML;
+  }
+</script>
+
+<body>
+  Recommned Movies
+
+  <div id="root">Display Recommned Movies</div>
+  <div id="bestOfEvents">Best Of Live Events</div>
+
+  <button  onclick="getRMoviesFunc()">Recommned Movies</button>
+
+ 
+    <button onclick="bestOfEventsFunc()">Recommned Movies</button>
+
+  </div>
+</body>
+
+
+
+
+dom
+
+
+1st id recoemnmovies
+
+
+2nd rest of live event
+
+3rd balaya 
+
+4 th pwana movies 
+
+
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    arrays and obj
+  </head>
+  <script>
+    const swiggyInstamart = [
+      {
+        userName: "Grocery Store Online",
+        password:
+          "Kirana/grocery store near me: Get all groceries delivered at your",
+      },
+      {
+        rgv: "Order Grocery Online in Mumbai",
+        rgv: "Bangalore Get your Groceries delivered to your doorstep in 10 minutes",
+      },
+      {
+        userName: "Order Grocery Online in Pune",
+        password: "Pune Get your Groceries delivered to your doorstep in 10 minutes"
+      },
+      {
+         userName: "Bangalore",
+        password: "Bangalore Get your Groceries delivered to your doorstep in 10 minutes",
+        
+      }
+    ];
+
+    // console.log(swiggyInstamart[5].userName, swiggyInstamart[5].password);
+
+    // loops
+
+    // map
+
+    // forEach
+
+    // for
+
+    for (let startArr = 0; startArr < swiggyInstamart.length; startArr++) {
+      debugger;
+    //   es6 
+      console.log(swiggyInstamart[startArr].userName, swiggyInstamart[startArr].password);
+    }
+  </script>
+  <body>
+    Arrays and objects
+    <button onClick="getName()">GetName</button>
+  </body>
+</html>
+
+
+<!-- clean code principles -->
+
+
+function method5() {
+            let cardsHTML = '';
+            users.forEach(user => {
+                cardsHTML += `
+                    <div style="border: 1px solid #ddd; padding: 10px; margin: 5px; border-radius: 5px; display: inline-block;">
+                        <strong>${user.name}</strong><br>
+                        Age: ${user.age}<br>
+                        City: ${user.city}
+                    </div>
+                `;
+            });
+            document.getElementById('output5').innerHTML = cardsHTML;
+        }

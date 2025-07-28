@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    Global Code Execution
+  </head>
+  <script>
+    console.log(userName);
+    let userName = "Steve Jobs";
+
+    console.log(userName);
+    function getName() {
+      console.log(userName);
+    }
+  </script>
+  <body>
+    Global Code Execution How Var let const works behindwood
+    <button onClick="{getName()}">GetName</button>
+  </body>
+</html>
